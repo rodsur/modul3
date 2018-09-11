@@ -21,6 +21,9 @@ public class B4 {
         Skriv et program, der givet en måneds nummer udskriver
         antallet af dage i denne måned.
         */
+        /*
+        forkert løsning
+        */
         for (int month=1; month<=12;month++) {
                 if (month%2 == 1) {
                     System.out.println("Måneden " + month + " er ulig og der er 30 dage");
