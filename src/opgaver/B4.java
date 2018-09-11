@@ -15,6 +15,12 @@ public class B4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        /*
+        Opgave B.4:
+        Skriv et program, der givet en måneds nummer udskriver
+        antallet af dage i denne måned.
+        */
         for (int month=1; month<=12;month++) {
                 if (month%2 == 1) {
                     System.out.println("Måneden " + month + " er ulig og der er 30 dage");
