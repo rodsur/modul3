@@ -21,17 +21,32 @@ public class B4 {
         Skriv et program, der givet en måneds nummer udskriver
         antallet af dage i denne måned.
         */
-        /*
-        forkert løsning
-        */
         for (int month=1; month<=12;month++) {
-                if (month%2 == 1) {
-                    System.out.println("Måneden " + month + " er ulig og der er 30 dage");
-                } else if (month%2 == 0 && month == 2) {
-                    System.out.println("Det er Februar og der er 28 eller 29 dage");
-                } else if (month%2 == 0) {
-                    System.out.println("Måneden " + month + " er lige og der er 31 dage");
-                }
+            switch (month) {
+                /*
+                dette er desværre ikke en mulighed
+                case 1,3,5,7,8,10,12:System.out.println("31 dage");
+                break;
+                */
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    System.out.println("Der er 31 dage i den " + month + ". måned");
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    System.out.println("Der er 30 dage i den " + month + ". måned");
+                    break;
+                case 2:
+                    System.out.println("Der er 28 eller 29 dage i den " + month + ". måned");
+                    break;
+            }
         }
     }
     
