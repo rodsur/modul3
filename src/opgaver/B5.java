@@ -20,8 +20,9 @@ public class B5 {
         Skriv et program, der udregner alle primtal under 1.000.000,
         og udskriver det største.
         */
-        
+        int highestPrime = 0;
         for (int potPrime=2;potPrime<=1000000;potPrime++){
+            System.out.println("Checker " + potPrime);
             boolean isPrime = true;
             for (int divisor = 2; divisor <= potPrime / 2; divisor++) {
                 if (potPrime % divisor == 0) {
@@ -29,7 +30,11 @@ public class B5 {
                     break;
                 }
             }
+            if (isPrime == true) {
+                highestPrime = potPrime;
+            }
         }
+        System.out.println("Højeste primtal er " + highestPrime);
     }
     
 }
