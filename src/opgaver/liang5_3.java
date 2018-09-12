@@ -15,10 +15,10 @@ public class liang5_3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Celsius\tFarenheit");
+        System.out.println("Celsius\tFahrenheit");
         for (double celsius = 0; celsius<=100; celsius+=2) {
-            double farenheit = celsius * 9 / 5 + 32;
-            System.out.printf("%.0f\t%.1f\n",celsius,farenheit);
+            double fahrenheit = celsius * 9 / 5 + 32;
+            System.out.printf("%.0f\t%.1f\n",celsius,fahrenheit);
         }
     }
     
